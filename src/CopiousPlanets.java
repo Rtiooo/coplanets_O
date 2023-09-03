@@ -12,23 +12,13 @@ import mindustry.ui.dialogs.*;
 public class CopiousPlanets extends Mod {
 
     public CopiousPlanets(){
-        Log.info("Loaded ExampleJavaMod constructor.");
-
-        //listen for game load event
-        Events.on(ClientLoadEvent.class, e -> {
-            //show dialog upon startup
-            Time.runTask(10f, () -> {
-                BaseDialog dialog = new BaseDialog("frog");
-                dialog.cont.add("behold").row();
-                dialog.cont.image(Core.atlas.find("coplanets-and-things-frog")).pad(20f).row();
-                dialog.cont.button("I see", dialog::hide).size(100f, 50f);
-                dialog.show();
-            });
-        });
     }
 
     @Override
     public void loadContent(){
+        Planets.tantros.accessible = true;
+        Planets.tantros.visible = true;
+        Planets.tantros.alwaysUnlocked = true;
         Log.info("Loading some example content.");
     }
 
