@@ -1,9 +1,15 @@
 package copious.content.planets;
+import arc.graphics.Color;
 import arc.math.geom.Vec3;
-import mindustry.content.Blocks;
 import mindustry.maps.generators.PlanetGenerator;
-import mindustry.maps.planet.TantrosPlanetGenerator;
-import mindustry.world.TileGen;
+public class CTantrosPlanetGenerator extends PlanetGenerator {
+    @Override
+    public float getHeight(Vec3 position) {
+        return 0.1f;
+    }
 
-public class CTantrosPlanetGenerator extends TantrosPlanetGenerator {
+    @Override
+    public Color getColor(Vec3 position) {
+        return Color.valueOf("00008b");
+    }
 }
