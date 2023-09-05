@@ -1,0 +1,1 @@
+gradlew jar && xcopy .\build\libs C:\"Program Files (x86)"\Steam\steamapps\common\Mindustry\saves\mods /e /y
