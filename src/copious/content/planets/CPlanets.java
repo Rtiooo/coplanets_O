@@ -18,7 +18,6 @@ public class CPlanets {
             atmosphereColor = Color.valueOf("5b5b80");
             iconColor = Color.valueOf("597be3");
             cloudMeshLoader = () -> new MultiMesh(
-                new HexSkyMesh(this, 1, 0.15f, 0.14f, 5, Color.valueOf("9fa8d1").a(0.75f), 2, 0.42f, 1f, 0.43f),
                 new HexSkyMesh(this, 5, 0.6f, 0.15f, 5, Color.valueOf("a2a2a8").a(0.75f), 2, 0.42f, 1.2f, 0.45f)
             );
             startSector = 10;
