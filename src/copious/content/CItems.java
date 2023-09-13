@@ -5,7 +5,7 @@ import mindustry.type.Item;
 import mindustry.type.Planet;
 
 public class CItems {
-    // titanium, sand, thorium and silicon are already in the game
+    // titanium, sand, thorium and silicon are already in the game, but new versions are created
     public static Item iron, nickel, quartz, salt, aluminium, glass, titanium, sand, thorium, silicon;
     public static Planet[] bannedOnPlanets = {Planets.erekir, Planets.serpulo};
     
