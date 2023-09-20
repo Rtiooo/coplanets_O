@@ -1,5 +1,6 @@
 package copious.content.planets;
 import arc.graphics.Color;
+import copious.content.planets.tantros.CTantrosPlanetGenerator;
 import mindustry.content.Items;
 import mindustry.content.Planets;
 import mindustry.graphics.g3d.HexMesh;

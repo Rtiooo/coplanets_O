@@ -4,9 +4,15 @@ import mindustry.world.blocks.environment.*;
 public class CBlocks {
     public static Block
     //env
-    air;
+    testFloor, waterOverlay;
 
     public static void load() {
-        air = new AirBlock("air");
+        testFloor = new Floor("testFloor"){{
+            variants = 1;
+        }};
+
+        waterOverlay = new OverlayFloor("waterOverlay"){{
+            variants = 1;
+        }};
     }
 }

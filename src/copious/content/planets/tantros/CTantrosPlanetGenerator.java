@@ -1,4 +1,4 @@
-package copious.content.planets;
+package copious.content.planets.tantros;
 import arc.graphics.Color;
 import arc.math.Mathf;
 import arc.math.geom.Vec3;
