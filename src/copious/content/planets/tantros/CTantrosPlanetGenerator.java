@@ -6,7 +6,7 @@ import arc.util.Tmp;
 import arc.util.noise.Simplex;
 import mindustry.maps.generators.PlanetGenerator;
 
-public class TantrosPlanetGenerator extends PlanetGenerator {
+public class CTantrosPlanetGenerator extends PlanetGenerator {
     public float rawHeight(Vec3 position){
         position = Tmp.v33.set(position).scl(2f);
         return (Mathf.pow(Simplex.noise3d(seed, 7, 0.5f, 1f/3f, position.x, position.y, position.z), 2.3f)) / (1f);

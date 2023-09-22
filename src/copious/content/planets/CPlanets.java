@@ -1,6 +1,6 @@
 package copious.content.planets;
 import arc.graphics.Color;
-import copious.content.planets.tantros.TantrosPlanetGenerator;
+import copious.content.planets.tantros.CTantrosPlanetGenerator;
 import mindustry.content.Items;
 import mindustry.content.Planets;
 import mindustry.graphics.g3d.HexMesh;
@@ -13,7 +13,7 @@ public class CPlanets {
     public static Planet tantros;
     public static void load() {
         tantros = new Planet("tantros", Planets.sun, 1f, 2){{
-            generator = new TantrosPlanetGenerator();
+            generator = new CTantrosPlanetGenerator();
             meshLoader = () -> new HexMesh(this, 4);
             alwaysUnlocked = true;
             atmosphereColor = Color.valueOf("5b5b80");
@@ -27,7 +27,6 @@ public class CPlanets {
             defaultEnv = Env.underwater | Env.terrestrial;
             hiddenItems.addAll(Items.serpuloItems).addAll(Items.erekirItems);
             ruleSetter = r -> {
-
             };
         }};
     }
