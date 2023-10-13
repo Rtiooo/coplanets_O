@@ -33,6 +33,7 @@ public class CBlocks {
             incinerateNonBuildable = true;
             size = 3;
             alwaysUnlocked = true;
+            requiresCoreZone = true;
             buildCostMultiplier = 0.5f;
             unitCapModifier = 8;
         }};
