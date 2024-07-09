@@ -1,11 +1,11 @@
 #the mod name as displayed in-game
-displayName: "Coplanets and things"
+displayName: "EGO"
 
 #the internal name of your mod
 name: "copious-planets"
 
 #your name
-author: "You"
+author: "Rtiooo"
 
 #the fully qualified main class of the mod
 main: "copious.CopiousPlanets"
